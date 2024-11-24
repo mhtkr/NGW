@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Online Store</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; }
+        header { background: #333; color: white; text-align: center; padding: 20px; }
+        nav ul { list-style: none; display: flex; justify-content: center; padding: 0; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { color: white; text-decoration: none; font-size: 1.2em; }
+        footer { background: #333; color: white; text-align: center; padding: 10px; position: fixed; width: 100%; bottom: 0; }
+        .product-list { padding: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .product-item { border: 1px solid #ccc; padding: 15px; background: white; text-align: center; width: 200px; }
+        .product-item img { max-width: 100%; height: auto; }
+        button { margin-top: 10px; padding: 10px; background: #9acd32; border: none; color: white; cursor: pointer; }
+        button:hover { background: #7fa832; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="product-list">
+        <div class="product-item">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Price: $25.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+    <footer>&copy; 2024 Online Store | All Rights Reserved</footer>
+</body>
+</html>

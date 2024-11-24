@@ -1,0 +1,84 @@
+<!--Experiment based on developing websites and portals using HTML, CSS, Java Script. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .portal-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow:
+                0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .welcome-message {
+            margin-top: 20px;
+            color: #4CAF50;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="portal-container">
+        <h2>Welcome to the Portal</h2>
+        <p>Please enter your details:</p>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <button onclick="displayWelcomeMessage()">Submit</button>
+        <div class="welcome-message" id="welcomeMessage"></div>
+    </div>
+    <script>
+        function displayWelcomeMessage() {
+            const name = document.getElementById('name').value, email =
+                document.getElementById('email').value;
+            document.getElementById('welcomeMessage').innerText = name && email ? `Welcome,
+${name}! Thank you for joining.` : 'Please fill in all fields.';
+        }
+    </script>
+</body>
+
+</html>
